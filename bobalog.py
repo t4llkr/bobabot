@@ -70,7 +70,7 @@ async def faggot(ctx):
 async def help(ctx):
   from datetime import datetime
   author = ctx.message.author
-  help_str = "**xxhelp**: выводить этот словесный понос\n**xxfaggot**: погадать на числах, пидор ты или нет (если выпало простое число, то покайся сука во грехе)\n**xxrzhu**: написать рандомную шутку из нуждиков. не забывайте прокручивать ''фьить-ха'' в голове после каждой.\n**xxroll**: исполнять аналог двачерского ролла, основанного на айди сообщения. правила очень просты: на дабл думаешь, на трипл выполняешь. выбил квадрипл - ***беги***.\n**xxhen**: кидать рандомный арт из личной коллекции\n**xxlurkpasta**: отправлять ссылку на какую-нить пасту из архива лурка\n**xxlurk**: кинуть абсолютно любую статью из лурка. готовьте штанишки.\n**xxbash**: показать одну из цитат, хранящихся в цитатнике рунета (https://bash.im)\n**xxoldg**: выдать какую-нить игру, выложенную на old-games\n**xxsmallg**: то же самое, только с small-games\n**xxrps**: поиграть с тобой в камень-ножницы-бумагу\n**xxdice**: побросить кость с любым указанным вами количеством граней. вообще любым. знаю, нереалистично, но кому на это не похуй?\n**xxhidden**: перечислить все найденные скрытые(лол) команды. их становится слишком дохуя, поэтому пусть они лучше будут тусоваться там\n**xxhiddensrc**: дать ссылки на основы ивентов, с помощью которых находились скрытые команды. лежат отдельно для тех, кто хочет порешать загадки самостоятельно\n**xxquote**: занести какую-либо фразу в локальный фонд золотых (нет) цитат\n**xxfrog**: топ сто смешных лягушек"
+  help_str = "**xxhelp**: выводить этот словесный понос\n**xxf**a**ggot**: погадать на числах, пидор ты или нет (если выпало простое число, то покайся сука во грехе)\n**xx**r**zhu**: написать рандомную шутку из нуждиков. не забывайте прокручивать ''фьить-ха'' в голове после каждой.\n**xxroll**: исполнять аналог двачерского ролла, основанного на айди сообщения. правила очень просты: на дабл думаешь, на трипл выполняешь. выбил квадрипл - ***беги***.\n**xxhen**: кидать рандомный арт из личной коллекции\n**xxlurkpasta**: отправлять ссылку на какую-нить пасту из архива лурка\n**xxlurk**: кинуть абсолютно любую статью из лурка. готовьте штанишки.\n**xxbash**: показать одну из цитат, хранящихся в цитатнике рунета (https://bash.im)\n**xxoldg**: выдать какую-нить игру, выложенную на old-games\n**xxsmallg**: то же самое, только с small-games\n**xxrps**: поиграть с тобой в камень-ножницы-бумагу. более подробная инфа лежит в приписке help\n**xxd**i**ce <number>**: подбросить кость с любым указанным вами количеством граней. вообще любым. знаю, нереалистично, но кому на это не похуй?\n**xxbred**: бред. подробнее в приписке help\n**xxu**e**b <0-5>**: уебанские комиксы\n**xxcrypto**: список команд, связанных с шифрами и кодировками;\n**xxhidden**: перечислить все найденные скрытые(лол) команды. их становится слишком дохуя, поэтому пусть они лучше будут тусоваться там\n**xxhidden**s**rc**: дать ссылки на основы ивентов, с помощью которых находились скрытые команды. лежат отдельно для тех, кто хочет порешать загадки самостоятельно\n**xxquote <text>**: занести какую-либо фразу в локальный фонд золотых (нет) цитат\n**xxfrog**: топ сто смешных лягушек\n**xxcat**: всратые коты.жпег\n**xxpepe**: рандомный пепе-пик"
   await ctx.send(embed = discord.Embed(title = 'Что я могу:', description = help_str, color = 0xb33700))
   with open('log.txt', 'a') as file:
     file.write(str(datetime.now()) + ' ' + str(author) + ' help\n')
@@ -79,7 +79,7 @@ async def help(ctx):
 async def hidden(ctx):
   from datetime import datetime
   author = ctx.message.author
-  mainstr = "**16.03.2021 (лайт-пилот)**\nxxhohol - он не хохол. собери их всех\nxxnibba - вайп ниграми вайп ниграми\nxxguro - рандомный гуро-арт\nxxdicc - хуй\n\n**20.03.2021 (ФУ БЛЯТЬ)**\nxxsmile - улыбнись, дурак\nxxkrabik - it is now time for crab\n\n**27.03.2021-? (микроархивы)**\n\n**12.05.2021-?(???)**"
+  mainstr = "**16.03.2021 (лайт-пилот)**\nxxhohol - он не хохол. собери их всех\nxxnibba - вайп ниграми вайп ниграми\nxxguro - рандомный гуро-арт\nxxdicc - хуй\n\n**20.03.2021 (ФУ БЛЯТЬ)**\nxxsmile - улыбнись, дурак\nxxkrabik - it is now time for crab\n\n**27.03.2021-23.07.2021 (микроархивы)**\nxxkal - обосранный крот в глиняной бетономешалке\nxxwebm - карманный шебм-тред ||ОСТОРОЖНО, ЕСТЬ NSFW-КОНТЕНТ||\nxxscotland - ФОРЕВААААААР, УИУИИИИИИИИИИИИ\n\n**12.05.2021-?(???)**"
   await ctx.send(embed = discord.Embed(title = 'Список команд, найденных во время ивентов:', description = mainstr, color = 0x4cc8ff))
   with open('log.txt', 'a') as file:
     file.write(str(datetime.now()) + ' ' + str(author) + ' hidden\n')
@@ -88,7 +88,7 @@ async def hidden(ctx):
 async def hiddensrc(ctx):
   from datetime import datetime
   author = ctx.message.author
-  str = ("Суть ивентов состоит в поиске подсказок на то, как должны прописываться скрытые команды. Для участия в ивентах будет достаточно минимального знания шифров и кодировок, гугла и смекалочки.\n\n**Первый ивент**: https://cdn.discordapp.com/attachments/692430796031655988/821382114963488808/hint.txt\nподсказка к решению (||пикча сломана намеренно||): https://cdn.discordapp.com/attachments/692430796031655988/821386008238751745/hinttohint.png\n\n**Второй ивент**: https://cdn.discordapp.com/attachments/806477880305254413/825704271839625256/hu1nnt.png\n\n**Третий ивент**: https://mega.nz/file/k6BHFYJB#Zdpk0AFB_xZl9knOfSBk2VWqnmdIySdtlD6O6HvWvVU\n\n**Четвёртый ивент**: https://cdn.discordapp.com/attachments/692103061623013429/841973890901475338/katarakt.jpg")
+  str = ("Суть ивентов состоит в поиске подсказок на то, как должны прописываться скрытые команды. Для участия в ивентах будет достаточно минимального знания шифров и кодировок, гугла и смекалочки.\n\n**Первый ивент**: https://cdn.discordapp.com/attachments/692430796031655988/821382114963488808/hint.txt\nподсказка к решению (||пикча сломана намеренно||): https://cdn.discordapp.com/attachments/692430796031655988/821386008238751745/hinttohint.png\n\n**Второй ивент**: https://cdn.discordapp.com/attachments/806477880305254413/825704271839625256/hu1nnt.png\n\n**Третий ивент**: https://mega.nz/file/9zAFzQBD#odeM3aNOpHm92YhUlyfeEGIYlN09YFnVmM4nOTpUsQ4\n\n**Четвёртый ивент (пока не решён)**: https://cdn.discordapp.com/attachments/692103061623013429/841973890901475338/katarakt.jpg")
   await ctx.send(embed = discord.Embed(description = str, color = 0x4cc8ff))
   with open('log.txt', 'a') as file:
     file.write(str(datetime.now()) + ' ' + str(author) + ' hiddensrc\n')
@@ -180,7 +180,7 @@ async def lurkpasta(ctx):
     from datetime import datetime
     import random
     author = ctx.message.author
-    templ = 'https://lurkmo.re/'
+    templ = 'https://lurkmore.to/'
     lines = open('lurk.txt', encoding='utf-8').read().splitlines()
     myline = random.choice(lines)
     templ += ''.join(str(myline))
@@ -195,7 +195,7 @@ async def lurk(ctx):
     import requests
     from bs4 import BeautifulSoup
     author = ctx.message.author
-    site = 'https://lurkmo.re/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:Random'
+    site = 'https://lurkmore.to/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:Random'
     templ = 'https://lurkmo.re/'
     l = requests.get(site)
     soup = BeautifulSoup(l.text, 'lxml')
@@ -222,9 +222,9 @@ async def hen(ctx):
     user_name = author.name
     message = ctx.message
     await message.delete()
-    filename = random.choice(glob.glob("//home//onotole//2d//*"))
+    filename = random.choice(glob.glob("2d/*"))
     henn = str(filename)
-    cut = str(henn.replace('//home//onotole//2d/', ''))
+    cut = str(henn.replace('2d/', ''))
     with open('log.txt', 'a') as file:
         file.write(str(datetime.now()) + ' ' + str(author) + ' hen ' + cut + '\n')
     f = discord.File(filename, filename="hen.jpg")
@@ -243,7 +243,7 @@ async def nibba(ctx):
     with open('log.txt', 'a') as file:
         file.write(str(datetime.now()) + ' ' + str(author) + ' nibba\n')
     for i in range(0,10):
-        filename = random.choice(glob.glob("//home//onotole//Nigrapack//*"))
+        filename = random.choice(glob.glob("Nigrapack/*"))
         ni = discord.File(filename, filename=None, spoiler=False)
         await ctx.send(file=ni)
         
@@ -253,7 +253,7 @@ async def hohol(ctx):
     import random
     import glob
     author = ctx.message.author
-    filename = random.choice(glob.glob("//home//onotole//hjo//*"))
+    filename = random.choice(glob.glob("hjo/*"))
     h = discord.File(filename, filename=None, spoiler=False)
     hoh = random.choice(glob.glob("//home//onotole//hohol//*"))
     hoho = discord.File(hoh, filename=None, spoiler=False)
@@ -266,11 +266,11 @@ async def hohol(ctx):
     elif ri <= 10:
         await ctx.send(file=hoho)
     elif ri in range (50,55):
-        filenam = random.choice(glob.glob("//home//onotole//svinya.mp4"))
+        filenam = random.choice(glob.glob("svinya.mp4"))
         hh = discord.File(filenam, filename=None, spoiler=False)
         await ctx.send(file=hh)
     elif ri == 66:
-        filena = random.choice(glob.glob("//home//onotole//hr.jpg"))
+        filena = random.choice(glob.glob("hr.jpg"))
         hhh = discord.File(filena, filename=None, spoiler=False)
         await ctx.send(file=hhh)
     else:
@@ -283,8 +283,8 @@ async def dicc(ctx):
     import random
     import glob
     author = ctx.message.author
-    filename = random.choice(glob.glob("//home//onotole//hui.mp4"))
-    filenam = random.choice(glob.glob("//home//onotole//Benis.mp4"))
+    filename = random.choice(glob.glob("hui.mp4"))
+    filenam = random.choice(glob.glob("Benis.mp4"))
     hh = discord.File(filename, filename=None, spoiler=False)
     binis = discord.File(filenam, filename=None, spoiler=False)
     dice = random.randint(1,100)
@@ -296,31 +296,39 @@ async def dicc(ctx):
         file.write(str(datetime.now()) + ' ' + str(author) + ' dicc\n')
     
 @bot.command()
-async def bash(ctx):
-    #qu = ("xxx: &gt; соморез &#13;&#10;xxx: &quot;Последнее место работы - соморез в рыбном ресторане&quot;.")
-    #quo = qu.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">").replace("&#39;", "'").replace('&quot;', '"').replace("&#13;&#10;", "\n")
-    #await ctx.channel.send(quo)
-    from datetime import datetime
+async def bash(ctx, *args):
     import random
     import requests
     from bs4 import BeautifulSoup
-    author = ctx.message.author
-    for i in range(0,100):
+    quote =  ' '.join(args)
+    quote_text = '#{}'.format(quote)
+    if len(quote_text) > 1:
         site = 'https://bash.im/quote/'
-        site += ''.join(str(random.randint(1,500000)))
-        #print(site)
+        myline = quote
+        site += ''.join(str(myline))
         l = requests.get(site)
         soup = BeautifulSoup(l.text, 'lxml')
         title = soup.find("meta",  property="og:description")
-        de = str(title["content"] if title else "No meta title given")
+        de = str(title["content"] if title else "Такой цитаты не существует")
         numb = soup.find("meta",  property="og:title")
-        det = str(numb["content"] if title else "No meta title given")
-        if de != ("No meta title given"):
-            dett = str(det.replace('Цитата ', ''))
-            await ctx.channel.send(dett + '\n' + de)
-            with open('log.txt', 'a') as file:
-                file.write(str(datetime.now()) + ' ' + str(author) + ' bash ' + dett + '\n')
-            break
+        det = str(numb["content"] if title else "")
+            #if de != ("No meta title given"):
+        dett = str(det.replace('Цитата ', ''))
+        await ctx.channel.send(dett + '\n' + de)
+    elif len(quote_text) == 1:
+        site = 'https://bash.im/quote/'
+        lines = open('bashids.txt').read().splitlines()
+        myline = random.choice(lines)
+        site += ''.join(str(myline))
+        l = requests.get(site)
+        soup = BeautifulSoup(l.text, 'lxml')
+        title = soup.find("meta",  property="og:description")
+        de = str(title["content"] if title else "")
+        numb = soup.find("meta",  property="og:title")
+        det = str(numb["content"] if title else "")
+            #if de != ("No meta title given"):
+        dett = str(det.replace('Цитата ', ''))
+        await ctx.channel.send(dett + '\n' + de)
             
 @bot.command( pass_context = True )
 async def frog(ctx):
@@ -332,11 +340,83 @@ async def frog(ctx):
     if frognd == 2:
         await ctx.send("https://www.youtube.com/watch?v=B604tfczxUg")
     else:
-        filename = random.choice(glob.glob("//home//onotole//funnyfrogs//*"))
+        filename = random.choice(glob.glob("funnyfrogs/*"))
         f = discord.File(filename, filename=None, spoiler=False)
         await ctx.send(file=f)
     with open('log.txt', 'a') as file:
         file.write(str(datetime.now()) + ' ' + str(author) + ' frog\n')
+        
+@bot.command( pass_context = True )
+async def cat(ctx):
+    from datetime import datetime
+    import random
+    import glob
+    author = ctx.message.author
+    filename = random.choice(glob.glob("catz/*"))
+    link = str(filename)
+    cut = str(link.replace('catz/', ''))
+    f = discord.File(filename, filename=None, spoiler=False)
+    await ctx.send(file=f)
+    with open('log.txt', 'a') as file:
+        file.write(str(datetime.now()) + ' ' + str(author) + ' cat ' + cut +  '\n')
+        
+@bot.command( pass_context = True )
+async def pepe(ctx):
+    from datetime import datetime
+    import random
+    import glob
+    author = ctx.message.author
+    filename = random.choice(glob.glob("pepe/*"))
+    link = str(filename)
+    cut = str(link.replace('pepe/', ''))
+    f = discord.File(filename, filename=None, spoiler=False)
+    await ctx.send(file=f)
+    with open('log.txt', 'a') as file:
+        file.write(str(datetime.now()) + ' ' + str(author) + ' pepe ' + cut +  '\n')
+        
+@bot.command()
+async def kal(ctx):
+    from datetime import datetime
+    import random
+    author = ctx.message.author
+    kal_str = ["https://soundcloud.com/user-767939022/6166fdnoaspc", "https://soundcloud.com/user-767939022/bqofwnbrwk44", "https://soundcloud.com/user-767939022/eh6nkzaamhns", "https://soundcloud.com/user-767939022/skj9xdq4hxpi", "https://soundcloud.com/user-767939022/sld89tcn5gly", "https://soundcloud.com/user-767939022/u3nwjjoft3iu", "https://soundcloud.com/user-767939022/ytovrwequ193", "https://soundcloud.com/user-767939022/m6lxacxwbd0t", "https://soundcloud.com/user-767939022/ka8k8v6ybxyz", "https://soundcloud.com/user-767939022/knfaedlca8hd", "https://soundcloud.com/user-767939022/n6mtponqqlzy", "https://soundcloud.com/user-767939022/wuhjmnppgkkk", "https://soundcloud.com/user-767939022/0fiemfivhdp6", "https://soundcloud.com/user-767939022/pgh0arzhxmgz", "https://soundcloud.com/user-767939022/rqgugnbr9cnz", "https://soundcloud.com/user-767939022/z98tlhu0yxap", "https://soundcloud.com/user-767939022/ud4ev47yoebk", "https://soundcloud.com/user-767939022/x2qzgigxrhz8", "https://soundcloud.com/user-767939022/dgd853hzjplv", "https://soundcloud.com/user-767939022/iitzvp0nrwi1", "https://soundcloud.com/user-767939022/yj5bh3lmvnm4", "https://soundcloud.com/user-767939022/luie2unkefjb", "https://soundcloud.com/user-767939022/oywvbn1np804", "https://soundcloud.com/user-767939022/t3mwu4rhbezf", "https://soundcloud.com/user-767939022/feikm4sk5j1p", "https://soundcloud.com/user-767939022/ridtsuuj1reo", "https://soundcloud.com/user-767939022/ui4u4ilo3a9l", "https://soundcloud.com/user-767939022/f-l", "https://soundcloud.com/user-767939022/nbtx6dc0iqee", "https://soundcloud.com/user-767939022/bocsl3e3mamk", "https://soundcloud.com/user-767939022/0towextpderl", "https://soundcloud.com/user-767939022/r45p1d0-451l0", "https://soundcloud.com/user-767939022/mr9lck2itfwa", "https://soundcloud.com/user-767939022/hk3j1jpefas2", "https://soundcloud.com/user-767939022/psd", "https://soundcloud.com/user-767939022/zqraodxat6f8", "https://soundcloud.com/user-767939022/1-1", "https://soundcloud.com/user-767939022/gzcxcbiefnnu", "https://soundcloud.com/user-767939022/g6bdduwkhrc7", "https://soundcloud.com/user-767939022/2-1", "https://soundcloud.com/user-767939022/1mlvtc96dbsx"]
+    await ctx.channel.send(random.choice(kal_str))
+    with open('log.txt', 'a') as file:
+        file.write(str(datetime.now()) + ' ' + str(author) + ' kal\n')
+   
+@bot.command( pass_context = True )
+async def webm(ctx):
+    from datetime import datetime
+    import random
+    import glob
+    author = ctx.message.author
+    filename = random.choice(glob.glob("shbem//*"))
+    f = discord.File(filename, filename=None, spoiler=False)
+    await ctx.send(file=f)
+    vidname = str(filename)
+    cut = str(vidname.replace('shbem/', ''))
+    with open('log.txt', 'a') as file:
+        file.write(str(datetime.now()) + ' ' + str(author) + ' webm ' + cut + '\n')
+    
+@bot.command()
+async def scotland(ctx):
+    from datetime import datetime
+    author = ctx.message.author
+    scurl = "https://www.youtube.com/watch?v=ktJpZbNB-OY"
+    kr = await ctx.send(scurl)
+    await kr.add_reaction("\U000026BD")
+    await kr.add_reaction("\U0001F1F8")
+    await kr.add_reaction("\U0001F1E8")
+    await kr.add_reaction("\U0001F1F4")
+    await kr.add_reaction("\U0001F1F9")
+    await kr.add_reaction("<:scotland:825323954662539344>")
+    await kr.add_reaction("\U0001F1F1")
+    await kr.add_reaction("\U0001F1E6")
+    await kr.add_reaction("\U0001F1F3")
+    await kr.add_reaction("\U0001F1E9")
+    await kr.add_reaction("\U0001F984")
+    with open('log.txt', 'a') as file:
+        file.write(str(datetime.now()) + ' ' + str(author) + ' scotland\n')
     
 @bot.command()
 async def oldg(ctx):
@@ -346,7 +426,7 @@ async def oldg(ctx):
     from bs4 import BeautifulSoup
     author = ctx.message.author
     ssi = "https://www.old-games.ru/game/"
-    ra = random.randint(0,11426)
+    ra = random.randint(0,11491)
     ko = ".html"
     ssi += ''.join(str(ra))
     fi = ssi + ko
@@ -369,7 +449,7 @@ async def smallg(ctx):
     for i in range(0,100):
         ssi = "https://small-games.info/?go=game&c="
         ra = random.randint(0,99)
-        gaid = random.randint(0,29200)
+        gaid = random.randint(0,29500)
         ssi += ''.join(str(ra))
         pa2 = "&i="
         tr = ssi + pa2
@@ -384,7 +464,31 @@ async def smallg(ctx):
             await ctx.channel.send(fin)
             with open('log.txt', 'a') as file:
                 file.write(str(datetime.now()) + ' ' + str(author) + ' smallg ' + str(gaid) + ' ' + cut2 + '\n')
-            break  
+            break
+        
+#БЛЯДСКИЙ КЛАУДФЛЕЙР НЕ ДАЁТ ПРОПАРСИТЬ ФИКБУК        
+'''@bot.command()
+async def fic(ctx):
+    from datetime import datetime
+    import random
+    import requests
+    from bs4 import BeautifulSoup
+    author = ctx.message.author
+    for i in range(0,100):
+        ssi = "https://ficbook.net/readfic/"
+        val = str(random.randint(1, 11000000))
+        ssi += ''.join(val)
+        l = requests.get(ssi)
+        soup = BeautifulSoup(l.text, 'lxml')
+        cols = str(soup.findAll('title'))
+        cut1 = str(cols.replace('[<title>', ''))
+        cut2 = str(cut1.replace('</title>]', ''))
+        if cols != "[<title>404 — Страница не найдена | Книга Фанфиков</title>]": # or cols != "[<title>Работа удалена</title>]":
+            await ctx.channel.send(ssi)
+            with open('log.txt', 'a') as file:
+                file.write(str(datetime.now()) + ' ' + str(author) + ' fic ' + str(val) + ' ' + cut2 + '\n')
+            break
+'''
 
 @bot.command()
 async def webmcoll(ctx):
@@ -463,22 +567,27 @@ async def rps(ctx, *, arg):
             await one.edit(content = figrand + "\n" + str(random.choice(bottie)))
             with open('log.txt', 'a') as file:
                 file.write(str(datetime.now()) + ' ' + str(author) + ' rps ' + str('paper tie\n'))
+    elif figcli == 'help':
+        await one.edit(content = "а, тебе помощь нужна? тогда извиняюсь, зря считали.\nты можешь прописать название фигуры как на русском, так и на английском языке с большой или маленькой буквы. можно даже эмодзи прописать, если тебе так угодно.\nподдерживаемые эмодзи для фигур: :rock: :fist: :punch:            :scissors: :v:          :roll_of_paper: :raised_hand: :hand_splayed:")
     else:
-        await one.edit(content = "неее чел, так не сработает. пиши по-другому")
+        await one.edit(content = "неее чел, так не сработает. пиши по-другому. приписка help тебе в помощь")
         #await ctx.send("неее чел, так не сработает. пиши по-другому")
         
+#ДОБАВИТЬ СООБЩЕНИЕ ПРИ ОТРИЦАТЕЛЬНЫХ ЧИСЛАХ И НУЛЕ
 @bot.command()
-async def dice(ctx, *, arg):
+async def dice(ctx, message):
     from datetime import datetime
     import random
-    import asyncio
     author = ctx.message.author
-    mes = '{}'.format(arg)
-    val = int(mes)
+    val = int(message)
     diap = random.randint(1, val)
     await ctx.send('Выпавшее число на кости из ' + str(mes) + ' граней:\n' + ':game_die: **' + str(diap) + '**')
+    #if "-" in mes:
+    #    await ctx.send('ты алису в зазеркалье тут не устраивай, ок?')
+    if val == 0:
+        await ctx.send('ты как кость без граней себе представляешь, умник?')
     with open('log.txt', 'a') as file:
-        file.write(str(datetime.now()) + ' ' + str(author) + ' dice to ' + str(mes) + ', result: ' + str(diap) + '\n')
+        file.write(str(datetime.now()) + ' ' + str(author) + ' dice to ' + str(message) + ', result: ' + str(diap) + '\n')
  
 @bot.command()
 async def quote(ctx, *args):
@@ -489,100 +598,283 @@ async def quote(ctx, *args):
         await ctx.send(quote_text)
         tofile = str(quote_text.replace('Теперь это задокументировано и сохранено. Вот цитата:\n> ', ''))
         with open('quotes.txt', 'a') as file:
-            file.write(str(author) + ' ' + tofile + '\n')
+            file.write(str(author) + ' quote ' + tofile + '\n')
     elif len(quote_text) == 56:
         await ctx.send("сначала напиши цитату. не хочу, чтоб моя база была похожа на книгу ничто\nи не пиши сюда никакой бесполезной хуйни, пожалуйста. не хочу, чтоб моя база была похожа на apex regional")
- 
-#БЛЯДСКИЙ КЛАУДФЛЕЙР НЕ ДАЁТ ПРОПАРСИТЬ ФИКБУК        
-'''@bot.command()
-async def fic(ctx):
-    from datetime import datetime
-    import random
-    import requests
-    from bs4 import BeautifulSoup
-    author = ctx.message.author
-    for i in range(0,100):
-        ssi = "https://ficbook.net/readfic/"
-        val = str(random.randint(1, 11000000))
-        ssi += ''.join(val)
-        l = requests.get(ssi)
-        soup = BeautifulSoup(l.text, 'lxml')
-        cols = str(soup.findAll('title'))
-        cut1 = str(cols.replace('[<title>', ''))
-        cut2 = str(cut1.replace('</title>]', ''))
-        if cols != "[<title>404 — Страница не найдена | Книга Фанфиков</title>]": # or cols != "[<title>Работа удалена</title>]":
-            await ctx.channel.send(ssi)
-            with open('log.txt', 'a') as file:
-                file.write(str(datetime.now()) + ' ' + str(author) + ' fic ' + str(val) + ' ' + cut2 + '\n')
-            break
-'''
-
-#РАЗОБРАТЬСЯ, ПОЧЕМУ НЕ РАБОТАЕТ УСЛОВИЕ ПРИ НУЛЕ СИМВОЛОВ И НЕВЕРНОМ НАПИСАНИИ ПРИПИСКИ
-#УПД: УСЛОВИЕ ПРИ НУЛЕ НЕ РАБОТАЕТ ИЗ-ЗА ARG. С *ARGS ПРОИСХОДИТ ЧЁРТИ ЧТО
+        
+#КОМИКСЫ
 @bot.command()
-async def bred(ctx, *, arg):
+async def ueb(ctx, message):
     from datetime import datetime
     import random
     import glob
     author = ctx.message.author
-    #quote =  ''.join(arg)
-    mes = '{}'.format(arg)
-
-    if 'list' in mes:
-        await ctx.channel.send("0-26 - все вышедшие на данный момент части (нулевая - пилот)\nhvori - шоукейс персонажей с их именами и особенностями\nlesya - спешл с лесей украинкой\n16a1-16a3 - версии 16 бреда с альтернативными концовками\niceberg - айсберг по бреду")
-    elif mes == 'hvori':
-            b = random.choice(glob.glob("//home//onotole//Бред//1e59ee431093bb2b.png"))
-            f = discord.File(b, filename=None, spoiler=False)
-            await ctx.send(file=f)
-    elif mes == 'iceberg':
-            b = random.choice(glob.glob("//home//onotole//Бред//cfab733326b7df15.png"))
-            f = discord.File(b, filename=None, spoiler=False)
-            await ctx.send(file=f)
-    elif mes == 'lesya':
-            b = random.choice(glob.glob("//home//onotole//Бред//lecyaukrainkaebat.png"))
-            f = discord.File(b, filename=None, spoiler=False)
-            await ctx.send(file=f)
-    elif mes == '16a1':
-            b = random.choice(glob.glob("//home//onotole//Бред//бред16альтофф.png"))
-            f = discord.File(b, filename=None, spoiler=False)
-            await ctx.send(file=f)
-    elif mes == '16a2':
-            b = random.choice(glob.glob("//home//onotole//Бред//бред16альторех.png"))
-            f = discord.File(b, filename=None, spoiler=False)
-            await ctx.send(file=f)
-    elif mes == '16a3':
-            b = random.choice(glob.glob("//home//onotole//Бред//бред16альтрасти.png"))
-            f = discord.File(b, filename=None, spoiler=False)
-            await ctx.send(file=f)
-    #elif len(mes) == 5:
-    #    await ctx.channel.send("hui")
-    elif int(mes) <= 26:
-        b = random.choice(glob.glob("//home//onotole//Бред//" + mes + ".png"))
+    with open('log.txt', 'a') as file:
+        file.write(str(datetime.now()) + ' ' + str(author) + ' ueb\n')
+    if int(message) <= 5:
+        b = random.choice(glob.glob("Бред/uebanskii/ueb" + str(message) + ".png"))
         f = discord.File(b, filename=None, spoiler=False)
         await ctx.send(file=f)
-    elif int(mes) > 26:
-        await ctx.channel.send("этот бред ещё не вышел")
-    #elif len(mes) == 5:
-    #    await ctx.channel.send("впиши list после команды, чтобы узнать все возможные приписки")
-    #elif mes != 'list' or mes != 'iceberg' or mes != 'lesya' or mes != '16a1' or mes != '16a2' or mes != '16a3':
-    else:
-        await ctx.channel.send("такого бреда не существует")
+    elif int(message) > 5:
+        await ctx.channel.send("этот комикс ещё не вышел, уёбище")
+        
+@bot.command( pass_context = True )
+async def bred(ctx, message):
+    from datetime import datetime
+    import random
+    import glob
+    author = ctx.message.author
+    strm = str(message)
+    with open('log.txt', 'a') as file:
+        file.write(str(datetime.now()) + ' ' + str(author) + ' bred ' + strm + '\n')
+    if strm == "archive":
+        b = random.choice(glob.glob("bred_complete_collection.rar"))
+        f = discord.File(b, filename=None, spoiler=False)
+        await ctx.send(file=f)
+    if strm == "hvori":
+        b = random.choice(glob.glob("Бред/1e59ee431093bb2b.png"))
+        f = discord.File(b, filename=None, spoiler=False)
+        await ctx.send(file=f)
+    if strm == "lesya":
+        b = random.choice(glob.glob("Бред/lecyaukrainkaebat.png"))
+        f = discord.File(b, filename=None, spoiler=False)
+        await ctx.send(file=f)
+    if strm == "16a1":
+        b = random.choice(glob.glob("Бред/бред16альтофф.png"))
+        f = discord.File(b, filename=None, spoiler=False)
+        await ctx.send(file=f)
+    if strm == "16a2":
+        b = random.choice(glob.glob("Бред/бред16альторех.png"))
+        f = discord.File(b, filename=None, spoiler=False)
+        await ctx.send(file=f)
+    if strm == "16a3":
+        b = random.choice(glob.glob("Бред/бред16альтрасти.png"))
+        f = discord.File(b, filename=None, spoiler=False)
+        await ctx.send(file=f)
+    if strm == "iceberg":
+        b = random.choice(glob.glob("Бред/iceberg/cfab733326b7df15.png"))
+        f = discord.File(b, filename=None, spoiler=False)
+        await ctx.send(file=f)
+    if strm == "random":
+        b = random.choice(glob.glob("Бред/*"))
+        f = discord.File(b, filename=None, spoiler=False)
+        await ctx.send(file=f)
+    if strm == "help":
+        await ctx.send('0-28 - все вышедшие на данный момент части (нулевая - пилот)\nhvori - шоукейс персонажей с их именами и особенностями\nlesya - спешл с лесей украинкой\n16a1-16a3 - версии 16 бреда с альтернативными концовками\niceberg - айсберг по бреду\nrandom - случайный комикс из серии\narchive - все комиксы в одном архиве')
+    if int(message) <= 29:
+        b = random.choice(glob.glob("Бред/" + str(message) + ".png"))
+        f = discord.File(b, filename=None, spoiler=False)
+        await ctx.send(file=f)
+    if int(message) > 29:
+        await ctx.send("этот бред ещё не вышел")
+        
+#КРИПТО
+@bot.command()
+async def crypto(ctx):
+  from datetime import datetime
+  author = ctx.message.author
+  help_str = "**b64/deb64 <text/code>** - простенькая команда для шифровки/дешифровки вписанного после команды текста с использованием Base64, просто чтобы было;\n**b32/deb32 <text/code>, b85 (или ascii85, base85)/deb85 (или deascii85, debase85) <text/code>** - аналогично команде выше, только с другими разрядностями бейса;\n**bacon/debacon <text/code>** - язык бешеных кроликов из реймана. шучу. это шифр бэкона, в котором каждая буква заменяется набором из пяти двоичных символов (в данном случае - буквами А и В). кириллица не поддерживается;\n**uni <text>** - переводит текст в код юникода;\n**latgib <text>** - превращает текст в псевдолатинскую абракадабру (latin gibberish). крайне простая вещь, но выглядит прикольно. кириллица не поддерживается, мб в будущем сделаю транслит\n**bin/debin <text/binary>** - шифратор-дешифратор двоичного кода;\n**morse/demorse <text/code>** - команды для работы с морзянкой. поддерживают кириллицу (на заметку: зашифрованная кириллица отличается от латиницы более жирными точками);\n**clock/declock <text/code>** - модифицированный a1z26. каждая пара часов отвечает за свою букву. полный список расшифровки букв находится тут: https://pastebin.com/xvFG3Ajj;"
+  await ctx.send(embed = discord.Embed(title = 'Крипто-команды:', description = help_str, color = 0xb33700))
+  with open('log.txt', 'a') as file:
+    file.write(str(datetime.now()) + ' ' + str(author) + ' crypto\n')
     
+@bot.command()
+async def b64(ctx, *, arg):
+    import base64
+    s = '{}'.format(arg)
+    b = s.encode("UTF-8")
+    e = base64.b64encode(b)
+    s1 = e.decode("UTF-8")
+    await ctx.send('**Сообщение закодировано. Вот чо вышло:**\n' + s1)
     
+@bot.command()
+async def deb64(ctx, *, arg):
+    import base64
+    s = '{}'.format(arg)
+    b1 = s.encode("UTF-8")
+    d = base64.b64decode(b1)
+    s1 = d.decode("UTF-8")
+    await ctx.send('**Сообщение расшифровано. Вот чо в нём было:**\n' + s1)
+    
+@bot.command()
+async def b32(ctx, *, arg):
+    import base64
+    s = '{}'.format(arg)
+    b = s.encode("UTF-8")
+    e = base64.b32encode(b)
+    s1 = e.decode("UTF-8")
+    await ctx.send('**Сообщение закодировано. Вот чо вышло:**\n' + s1)
+    
+@bot.command()
+async def deb32(ctx, *, arg):
+    import base64
+    s = '{}'.format(arg)
+    b1 = s.encode("UTF-8")
+    d = base64.b32decode(b1)
+    s1 = d.decode("UTF-8")
+    await ctx.send('**Сообщение расшифровано. Вот чо в нём было:**\n' + s1)
+    
+@bot.command(pass_context = True, aliases=['ascii85', 'base85'])
+async def b85(ctx, *, arg):
+    import base64
+    s = '{}'.format(arg)
+    b = s.encode("UTF-8")
+    e = base64.b85encode(b)
+    s1 = e.decode("UTF-8")
+    await ctx.send('**Сообщение закодировано. Вот чо вышло:**\n' + s1)
+    
+@bot.command(pass_context = True, aliases=['deascii85', 'debase85'])
+async def deb85(ctx, *, arg):
+    import base64
+    s = '{}'.format(arg)
+    b1 = s.encode("UTF-8")
+    d = base64.b85decode(b1)
+    s1 = d.decode("UTF-8")
+    await ctx.send('**Сообщение расшифровано. Вот чо в нём было:**\n' + s1)
+        
+@bot.command()
+async def bacon(ctx, *, arg):
+    def multiple_replace(target_str, replace_values):
+        for i, j in replace_values.items():
+            target_str = target_str.replace(i, j)
+        return target_str
+
+    my_str = '{}'.format(arg)
+    low_str = my_str.lower()
+    zero = low_str.replace(' ', '')
+    repl = {"a":"AAAAA ","b":"AAAAB ","c":"AAABA ","d":"AAABB ","e":"AABAA ","f":"AABAB ","g":"AABBA ","h":"AABBB ","i":"ABAAA ","j":"ABAAB ","k":"ABABA ","l":"ABABB ","m":"ABBAA ","n":"ABBAB ","o":"ABBBA ","p":"ABBBB ","q":"BAAAA ","r":"BAAAB ","s":"BAABA ","t":"BAABB ","u":"BABAA ","v":"BABAB ","w":"BABBA ","x":"BABBB ","y":"BBAAA ","z":"BBAAB "}
+
+    obsh = multiple_replace(zero, repl)
+    await ctx.send(obsh)
+    
+@bot.command()
+async def debacon(ctx, *, arg):
+    def multiple_replace(target_str, replace_values):
+        for i, j in replace_values.items():
+            target_str = target_str.replace(i, j)
+        return target_str
+
+    my_str = '{}'.format(arg)
+    repl = {"AAAAA":"a","AAAAB":"b","AAABA":"c","AAABB":"d","AABAA":"e","AABAB":"f","AABBA":"g","AABBB":"h","ABAAA":"i","ABAAB":"j","ABABA":"k","ABABB":"l","ABBAA":"m","ABBAB":"n","ABBBA":"o","ABBBB":"p","BAAAA":"q","BAAAB":"r","BAABA":"s","BAABB":"t","BABAA":"u","BABAB":"v","BABBA":"w","BABBB":"x","BBAAA":"y","BBAAB":"z"}
+    final = {" ":""}
+
+    perv = multiple_replace(my_str, repl)
+    obsh = multiple_replace(perv, final)
+    await ctx.send(obsh)
+    
+@bot.command()
+async def latgib(ctx, *, arg):
+    import random
+    text = '{}'.format(arg)
+    rev = ""
+    for word in text.split():
+        ends = ["us","um","it","ae","is","em","ei","a","on","en","u","er","am","as","ibus","ebus","erum","i"]
+        oko = random.choice(ends)
+        if len(word) > 2:
+            rev = "{} {}".format(rev, word[::-1] + oko)
+        else:
+            rev = "{} {}".format(rev, word)
+    await ctx.send(rev)
+    
+@bot.command()
+async def uni(ctx, *, arg):
+    s = '{}'.format(arg)
+    z = ' '.join(hex(ord(c)).split('x')[-1] for c in s)
+    await ctx.send(z)
+        
+@bot.command()
+async def bin(ctx, *, arg):
+    s = '{}'.format(arg)
+    await ctx.send('```' + (' '.join(map(lambda x: "{0:b}".format(ord(x)).zfill(16), s))) + '```')
+    
+@bot.command()
+async def debin(ctx, *, arg):
+    result = ''
+    input_string = '{}'.format(arg)
+    for word in input_string.strip().split(' '):
+        number = int(word,2)
+        result += chr(number)
+    await ctx.send('```' + result + '```')
+    
+@bot.command()
+async def morse(ctx, *, arg):
+    my_str = '{}'.format(arg)
+    low_str = my_str.lower()
+    sp = {".":".-.-.-","-":"-....-",
+    "a":".-","b":"-...","c":"-.-.","d":"-..","e":".","f":"..-.","g":"--.","h":"....","i":"..","j":".---","k":"-.-","l":".-..","m":"--","n":"-.","o":"---","p":".--.","q":"--.-","r":".-.","s":"...","t":"-","u":"..-","v":"...-","w":".--","x":"-..-","y":"-.--","z":"--..",
+    "а":"•-","б":"-•••","в":"•--","г":"--•","д":"-••","е":"•","ё":"•","ж":"•••-","з":"--••","и":"••","й":"•---","к":"-•-","л":"•-••","м":"--","н":"-•","о":"---","п":"•--•","р":"•-•","с":"•••","т":"-","у":"••-","ф":"••-•","х":"••••","ц":"-•-•","ч":"---•","ш":"----","щ":"--•-","ъ":"•--•-•","ы":"-•--","ь":"-••-","э":"••-••","ю":"••--","я":"•-•-",
+    "0":"-----","1":".----","2":"..---","3":"...--","4":"....-","5":".....","6":"-....","7":"--...","8":"---..","9":"----.",
+    ",":"--..--","?":"..--..","!":"-.-.--","'":".----.","(":"-.--.",")":"-.--.-","&":".-...",":":"---...",";":"-.-.-.","=":"-...-","+":".-.-.","_":"..--.-",'\"':".-..-.","$":"...-..-","@":".--.-.","/":"-..-."}
+    result = []
+    for word in low_str.split():
+        word2 = []
+        for i in word:
+            word2.append(sp[i])
+        result.append(' '.join(word2))
+    await ctx.send('```' + (' / '.join(result)) + '```')
+    
+@bot.command()
+async def demorse(ctx, *, arg):
+    my_str = '{}'.format(arg)
+    low_str = my_str.lower()
+    mas = [[".",".-.-.-"],["-","-....-"],
+    ["a",".-"],["b","-..."],["c","-.-."],["d","-.."],["e","."],["f","..-."],["g","--."],["h","...."],["i",".."],["j",".---"],["k","-.-"],["l",".-.."],["m","--"],["n","-."],["o","---"],["p",".--."],["q","--.-"],["r",".-."],["s","..."],["t","-"],["u","..-"],["v","...-"],["w",".--"],["x","-..-"],["y","-.--"],["z","--.."],
+    ["а","•-"],["б","-•••"],["в","•--"],["г","--•"],["д","-••"],["е","•"],["ж","•••-"],["з","--••"],["и","••"],["й","•---"],["к","-•-"],["л","•-••"],["м","--"],["н","-•"],["о","---"],["п","•--•"],["р","•-•"],["с","•••"],["т","-"],["у","••-"],["ф","••-•"],["х","••••"],["ц","-•-•"],["ч","---•"],["ш","----"],["щ","--•-"],["ъ","•--•-•"],["ы","-•--"],["ь","-••-"],["э","••-••"],["ю","••--"],["я","•-•-"],
+    ["0","-----"],["1",".----"],["2","..---"],["3","...--"],["4","....-"],["5","....."],["6","-...."],["7","--..."],["8","---.."],["9","----."],
+    [",","--..--"],["?","..--.."],["!","-.-.--"],["'",".----."],["(","-.--."],[")","-.--.-"],["&",".-..."],[":","---..."],[";","-.-.-."],["=","-...-"],["+",".-.-."],["_","..--.-"],['\"',".-..-."],["$","...-..-"],["@",".--.-."],["/","-..-."],[" ","/"]]
+    itog = []
+    for letter in low_str.split(' '):
+        for i in range(len(mas)):
+            if letter == mas[i][1]:
+                itog.append(mas[i][0])
+    await ctx.send('```' + (''.join(itog)) + '```')
+    
+@bot.command()
+async def clock(ctx, *, arg):
+    my_str = '{}'.format(arg)
+    low_str = my_str.lower()
+    sp = {"a":":clock12::clock1:","b":":clock12::clock2:","c":":clock12::clock3:","d":":clock12::clock4:","e":":clock12::clock5:","f":":clock12::clock6:","g":":clock12::clock7:","h":":clock12::clock8:","i":":clock12::clock9:","j":":clock12::clock10:","k":":clock12::clock11:","l":":clock1::clock2:","m":":clock1::clock3:","n":":clock1::clock4:","o":":clock1::clock5:","p":":clock1::clock6:","q":":clock1::clock7:","r":":clock1::clock8:","s":":clock1::clock9:","t":":clock2::clock12:","u":":clock2::clock1:","v":":clock2::clock2:","w":":clock2::clock3:","x":":clock2::clock4:","y":":clock2::clock5:","z":":clock2::clock6:",
+    "а":":clock12::clock1:","б":":clock12::clock2:","в":":clock12::clock3:","г":":clock12::clock4:","д":":clock12::clock5:","е":":clock12::clock6:","ё":":clock12::clock7:","ж":":clock12::clock8:","з":":clock12::clock9:","и":":clock12::clock10:","й":":clock12::clock11:","к":":clock1::clock2:","л":":clock1::clock3:","м":":clock1::clock4:","н":":clock1::clock5:","о":":clock1::clock6:","п":":clock1::clock7:","р":":clock1::clock8:","с":":clock1::clock9:","т":":clock2::clock12:","у":":clock2::clock1:","ф":":clock2::clock2:","х":":clock2::clock3:","ц":":clock2::clock4:","ч":":clock2::clock5:","ш":":clock2::clock6:","щ":":clock2::clock7:","ъ":":clock2::clock8:","ы":":clock2::clock9:","ь":":clock3::clock12:","э":":clock3::clock1:","ю":":clock3::clock2:","я":":clock3::clock3:"}
+    result = []
+    for word in low_str.split():
+        word2 = []
+        for i in word:
+            word2.append(sp[i])
+        result.append('-'.join(word2))
+    await ctx.send('-\U0001F55B\U0001F55B-'.join(result)) 
+    
+@bot.command()
+async def declock(ctx, *, arg):
+    my_str = '{}'.format(arg)
+    low_str = my_str.lower()
+    mas = [["a","\U0001F55B\U0001F550"],["b","\U0001F55B\U0001F551"],["c","\U0001F55B\U0001F552"],["d","\U0001F55B\U0001F553"],["e","\U0001F55B\U0001F554"],["f","\U0001F55B\U0001F555"],["g","\U0001F55B\U0001F556"],["h","\U0001F55B\U0001F557"],["i","\U0001F55B\U0001F558"],["j","\U0001F55B\U0001F559"],["k","\U0001F55B\U0001F55A"],["l","\U0001F550\U0001F551"],["m","\U0001F550\U0001F552"],["n","\U0001F550\U0001F553"],["o","\U0001F550\U0001F554"],["p","\U0001F550\U0001F555"],["q","\U0001F550\U0001F556"],["r","\U0001F550\U0001F557"],["s","\U0001F550\U0001F558"],["t","\U0001F551\U0001F55B"],["u","\U0001F551\U0001F550"],["v","\U0001F551\U0001F551"],["w","\U0001F551\U0001F552"],["x","\U0001F551\U0001F553"],["y","\U0001F551\U0001F554"],["z","\U0001F551\U0001F555"],[" ","\U0001F55B\U0001F55B"]]
+    masrus = [["а","\U0001F55B\U0001F550"],["б","\U0001F55B\U0001F551"],["в","\U0001F55B\U0001F552"],["г","\U0001F55B\U0001F553"],["д","\U0001F55B\U0001F554"],["е","\U0001F55B\U0001F555"],["ё","\U0001F55B\U0001F556"],["ж","\U0001F55B\U0001F557"],["з","\U0001F55B\U0001F558"],["и","\U0001F55B\U0001F559"],["й","\U0001F55B\U0001F55A"],["к","\U0001F550\U0001F551"],["л","\U0001F550\U0001F552"],["м","\U0001F550\U0001F553"],["н","\U0001F550\U0001F554"],["о","\U0001F550\U0001F555"],["п","\U0001F550\U0001F556"],["р","\U0001F550\U0001F557"],["с","\U0001F550\U0001F558"],["т","\U0001F551\U0001F55B"],["у","\U0001F551\U0001F550"],["ф","\U0001F551\U0001F551"],["х","\U0001F551\U0001F552"],["ц","\U0001F551\U0001F553"],["ч","\U0001F551\U0001F554"],["ш","\U0001F551\U0001F555"],["щ","\U0001F551\U0001F556"],["ъ","\U0001F551\U0001F557"],["ы","\U0001F551\U0001F558"],["ь","\U0001F552\U0001F55B"],["э","\U0001F552\U0001F550"],["ю","\U0001F552\U0001F551"],["я","\U0001F552\U0001F552"],[" ","\U0001F55B\U0001F55B"]]
+    itog = []
+    for letter in low_str.split('-'):
+        for i in range(len(mas)):
+            if letter == mas[i][1]:
+                itog.append(mas[i][0])
+    itogrus = []
+    for letter in low_str.split('-'):
+        for i in range(len(masrus)):
+            if letter == masrus[i][1]:
+                itogrus.append(masrus[i][0])
+    await ctx.send('```eng: ' + (''.join(itog)) + '\nrus: ' + (''.join(itogrus)) + '```')
     
    #ТУТ ЛЕЖИТ КОММАНД_ЕРРОР
 @bot.event
 async def on_command_error(ctx, error):
+    import random
+    import asyncio
+    missingarg_str = ["Аргумента нету, слушай. Без него ваще не могу.", "Видишь аргументы? И я не вижу, а они есть. Дуй в xxhelp и чекай, где обосрался.", "Не хватает аргумента. Перечитай ещё раз строчку с командой в xxhelp, чтобы уж точно понять, как ей пользоваться.", "Ошибка стоп-ноль-ноль-ноль-ноль-ноль-ААААА: аргумент не найден. Пропиши xxhelp и перечитай строчку с командой.", "Аргумента нет, ничё делать не буду. Шуруй в xxhelp.", "Где аргумент, Лебовски? Гони аргумент, Лебовски.", "Приписька не найдена. Вали в xxhelp и чтобы такого больше не повторилось, понял?"]
     if isinstance(error, commands.CommandNotFound):
         from datetime import datetime
         import random
         author = ctx.message.author
-        await ctx.send(embed = discord.Embed(description = (random.choice(wrong_str)), color = 0xb33700))
+        errmes = await ctx.send(embed = discord.Embed(description = (random.choice(wrong_str)), color = 0xb33700))
+        await asyncio.sleep(5.0)
+        await errmes.delete()
         with open('log.txt', 'a') as file:
             file.write(str(datetime.now()) + ' ' + str(author) + ' error\n')
     elif isinstance(error, commands.MissingRequiredArgument):
-        from datetime import datetime
-        author = ctx.message.author
-        await ctx.send("выбери сначала фигуру, потом поговорим.\nты можешь прописать название фигуры как на русском, так и на английском языке с большой или маленькой буквы. можно даже эмодзи прописать, если тебе так угодно.\nподдерживаемые эмодзи для фигур: :rock: :fist: :punch:            :scissors: :v:          :roll_of_paper: :raised_hand: :hand_splayed:")
-        with open('log.txt', 'a') as file:
-            file.write(str(datetime.now()) + ' ' + str(author) + ' rps_error\n')
+        await ctx.reply(random.choice(missingarg_str), mention_author=True)
