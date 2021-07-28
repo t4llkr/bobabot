@@ -9,4 +9,4 @@
 И многое, мно-о-огое-другое!  
   
 Ёкарный бабай, жми!
-cutt.ly/feedmejon
+https://cutt.ly/feedmejon
